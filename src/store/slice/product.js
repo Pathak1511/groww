@@ -18,11 +18,11 @@ const productSlice = createSlice({
       const { price, index, sign } = action.payload;
       if (sign === "+") {
         state.product[index].quantity += 1;
-        state.amount = state.amount * 1.0 + price;
+        state.amount = state.amount + price;
       } else {
         if (state.product[index].quantity > 1) {
           state.product[index].quantity -= 1;
-          state.amount = state.amount * 1.0 - price;
+          state.amount = state.amount - price;
         }
       }
       state.amount = state.amount.toFixed(3);
