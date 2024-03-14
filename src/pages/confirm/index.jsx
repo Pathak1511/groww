@@ -1,7 +1,7 @@
 import React from "react";
 import { useSelector } from "react-redux";
 
-function confirm() {
+function Confirm() {
   const data = useSelector((state) => state.product);
   const product = data.product;
   const amount = data.amount;
@@ -46,4 +46,4 @@ function confirm() {
   );
 }
 
-export default confirm;
+export default Confirm;

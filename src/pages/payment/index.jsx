@@ -11,7 +11,7 @@ import { useRouter } from "next/router";
 import { runConfetti } from "@/lib/utils";
 import { useSelector } from "react-redux";
 
-function payment() {
+function Payment() {
   const router = useRouter();
   const [amount, setAmount] = useState(
     useSelector((state) => state.product.amount)
@@ -196,4 +196,4 @@ function payment() {
   );
 }
 
-export default payment;
+export default Payment;
