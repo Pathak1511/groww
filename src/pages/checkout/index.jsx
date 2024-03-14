@@ -34,13 +34,13 @@ function Checkout() {
     dispatch(updateQuantity({ sign, index, price }));
     if (sign === "+") {
       orders[index].quantity += 1;
-      let currAmount = amount + price * 1.0;
+      let currAmount = amount + price;
 
       setAmount(currAmount.toFixed(2));
       // amount = amount + price * 1.0;
     } else if (sign === "-") {
       orders[index].quantity -= 1;
-      let currAmount = amount - price * 1.0;
+      let currAmount = amount - price;
 
       setAmount(currAmount.toFixed(2));
       // amount = amount + price * 1.0;
