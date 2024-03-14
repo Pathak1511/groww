@@ -85,14 +85,14 @@ function Checkout() {
 
         {/* Order list */}
         <div>
-          <h4 className="text-[12px] capitalize text-gray-400 font-semibold py-2 mt-4">
+          <h4 className="text-[12px] capitalize text-gray-400 font-semibold py-2 mt-4 phone:text-[14px]">
             Order List
           </h4>
 
           {orders.map((item, ind) => (
             <div
               key={ind}
-              className="flex items-start p-2 my-1 text-sm border-[0.2px] relative"
+              className="flex items-start p-2 my-1 text-sm border-[0.2px] relative "
             >
               <img
                 src={item.image}
@@ -108,9 +108,9 @@ function Checkout() {
                 </h4>
                 <p className="font-semibold text-gray-400">{item.price} $</p>
               </div>
-              <div className="absolute align-middle right-4 flex p-2">
+              <div className="absolute align-middle right-4 flex">
                 <button
-                  className="border-[0.6px] px-2 transition-all select-none  active:opacity-50 disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none rounded-sm"
+                  className="border-[0.6px] p-2 transition-all align-middle select-none  active:opacity-50 disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none rounded-sm"
                   style={
                     item.quantity === 1
                       ? {
@@ -122,7 +122,7 @@ function Checkout() {
                 >
                   <AiOutlineMinus />
                 </button>
-                <div className="border-[0.6px] w-8 mx-[1.6px] align-middle px-2 rounded-sm">
+                <div className="border-[0.6px] w-8 mx-[1.6px] align-middle p-2 rounded-sm">
                   {item.quantity}
                 </div>
                 <button
