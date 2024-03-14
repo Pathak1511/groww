@@ -31,8 +31,8 @@ function Payment() {
       alert("please select payment method");
       return;
     } else {
-      runConfetti();
       router.push("/confirm");
+      runConfetti();
     }
   };
 

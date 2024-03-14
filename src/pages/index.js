@@ -3,7 +3,7 @@ import { useRouter } from "next/router";
 import { useEffect, useState } from "react";
 import { useDispatch } from "react-redux";
 
-import { addproduct } from "./store/slice/product";
+import { addproduct } from "../store/slice/product";
 const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {

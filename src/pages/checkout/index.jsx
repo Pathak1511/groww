@@ -8,7 +8,7 @@ import {
 } from "react-icons/ai";
 import { useRouter } from "next/router";
 import { useSelector, useDispatch } from "react-redux";
-import { updateQuantity } from "../store/slice/product";
+import { updateQuantity } from "../../store/slice/product";
 
 function Checkout() {
   const router = useRouter();
