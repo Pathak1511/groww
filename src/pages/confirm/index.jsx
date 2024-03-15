@@ -9,11 +9,11 @@ function Confirm() {
   const method = data.method || ["UPI", "Card"];
   return (
     <div className="flex justify-center items-start p-8 overflow-auto phone:p-1">
-      <div className="w-[560px] p-4 bg-[#fff] text-black rounded-[4px]">
+      <div className="max-w-max p-4 bg-[#fff] text-black rounded-[4px]">
         {/* cards */}
         {product.map((item, index) => (
           <div
-            className="flex items-center gap-10 my-4 phone:flex-col tablet:flex-row phone:gap-4"
+            className="flex flex-row items-center gap-10 my-4 phone:flex-col tablet:flex-row phone:gap-4"
             key={index}
           >
             <img
