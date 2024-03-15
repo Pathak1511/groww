@@ -1,7 +1,8 @@
 import React from "react";
 import { useSelector } from "react-redux";
-
+import { useRouter } from "next/router";
 function Confirm() {
+  const router = useRouter();
   const data = useSelector((state) => state.product);
   const product = data.product;
   const amount = data.amount;
@@ -43,6 +44,14 @@ function Confirm() {
         </div>
         <div>
           <p className="text-md">Status : Success &#x2705;</p>
+        </div>
+        <div>
+          <button
+            className="text-lg font-bold align-middle text-[#1d3557]"
+            onClick={() => router.push("/")}
+          >
+            Home
+          </button>
         </div>
       </div>
     </div>

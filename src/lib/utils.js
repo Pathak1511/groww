@@ -1,7 +1,7 @@
 import confetti from "canvas-confetti";
 
 export const runConfetti = () => {
-  var duration = 15 * 1000;
+  var duration = 3 * 1000;
   var animationEnd = Date.now() + duration;
   var skew = 1;
 
