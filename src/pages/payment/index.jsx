@@ -37,8 +37,8 @@ function Payment() {
   };
 
   return (
-    <div className="flex justify-center items-center p-8 relative overflow-auto phone:p-4">
-      <div className="w-[400px] p-4 bg-[#fff] text-black rounded-[4px]">
+    <div className="flex justify-center items-center p-8 relative overflow-auto phone:p-1">
+      <div className="w-[400px] h-screen p-4 bg-[#fff] text-black rounded-[4px]">
         {/* upper header */}
         <div className="relative">
           <button
@@ -168,7 +168,7 @@ function Payment() {
         </div>
 
         {/* Total and Payment button */}
-        <div className="flex flex-col justify-between  mt-16 align-bottom">
+        <div className="flex flex-col phone:absolute phone:w-[90%] phone:bottom-4 justify-between  mt-16 align-bottom">
           <div className="flex justify-between">
             <h4 className="text-[12px] capitalize text-gray-400 font-semibold">
               Admin fee

@@ -7,17 +7,17 @@ function Confirm() {
   const amount = data.amount;
   const method = data.method || ["UPI", "Card"];
   return (
-    <div className="flex justify-center items-start p-8 overflow-auto phone:p-4">
+    <div className="flex justify-center items-start p-8 overflow-auto phone:p-1">
       <div className="w-[560px] p-4 bg-[#fff] text-black rounded-[4px]">
         {/* cards */}
         {product.map((item, index) => (
           <div
-            className="flex items-center gap-10 my-4 phone:flex-col tablet:flex-row"
+            className="flex items-center gap-10 my-4 phone:flex-col tablet:flex-row phone:gap-4"
             key={index}
           >
             <img
               src={item.image}
-              className="w-40 h-40 p-2 align-top bg-gray-300 rounded-sm object-cover phone:w-60 phone:p-1"
+              className="w-40 h-40 p-2 align-top bg-gray-300 rounded-sm object-cover phone:w-80 phone:p-0 phone:rounded-sm phone:shadow-md"
             />
             <div className="flex-1 font-medium">
               <h2 className="text-xl font-semibold">{item.title}</h2>
@@ -25,21 +25,24 @@ function Confirm() {
                 Quantity : <bold>{item.quantity}</bold>
               </p>
               <p>
-                Price : <strong>{item.price}</strong>
+                Price : <strong>{item.price} $</strong>
               </p>
             </div>
           </div>
         ))}
 
         {/* Via ? Upi : Cards */}
+        <br />
         <div>
-          <p>Payment Method : {method[Math.floor(Math.random() * 2)]}</p>
+          <p className="text-md">
+            Payment Method : {method[Math.floor(Math.random() * 2)]}
+          </p>
         </div>
         <div>
-          <p>Total Amount : {amount}</p>
+          <p className="text-md">Total Amount : {amount}</p>
         </div>
         <div>
-          <p>Status : Success ✔️</p>
+          <p className="text-md">Status : Success &#x2705;</p>
         </div>
       </div>
     </div>

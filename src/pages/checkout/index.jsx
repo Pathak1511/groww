@@ -46,7 +46,7 @@ function Checkout() {
   };
 
   return (
-    <div className="flex justify-center items-center p-8 overflow-auto phone:p-4">
+    <div className="flex justify-center items-center p-8 overflow-auto phone:p-1">
       <div className="w-[400px] p-4 bg-[#fff] text-black rounded-[4px] ">
         {/* upper header */}
         <div className="relative">
@@ -90,7 +90,7 @@ function Checkout() {
           {orders.map((item, ind) => (
             <div
               key={ind}
-              className="flex items-start p-2 my-1 text-sm border-[0.2px] relative "
+              className="flex items-start p-2 my-1 text-sm border-[0.2px] relative"
             >
               <img
                 src={item.image}
