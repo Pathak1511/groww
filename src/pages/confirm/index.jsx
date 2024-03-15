@@ -17,7 +17,7 @@ function Confirm() {
           >
             <img
               src={item.image}
-              className="w-40 h-40 p-2 align-top bg-gray-300 rounded-sm object-cover"
+              className="w-40 h-40 p-2 align-top bg-gray-300 rounded-sm object-cover phone:w-60 phone:p-1"
             />
             <div className="flex-1 font-medium">
               <h2 className="text-xl font-semibold">{item.title}</h2>
