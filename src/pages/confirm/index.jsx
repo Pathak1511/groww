@@ -7,7 +7,7 @@ function Confirm() {
   const amount = data.amount;
   const method = data.method || ["UPI", "Card"];
   return (
-    <div className="flex justify-center items-start p-8 overflow-auto">
+    <div className="flex justify-center items-start p-8 overflow-auto phone:p-4">
       <div className="w-[560px] p-4 bg-[#fff] text-black rounded-[4px]">
         {/* cards */}
         {product.map((item, index) => (

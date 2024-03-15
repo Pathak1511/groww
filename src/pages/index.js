@@ -51,7 +51,7 @@ export default function Home() {
       className={`flex min-h-screen flex-col items-center justify-center p-24 ${inter.className}`}
     >
       <button
-        className=" text-white font-bold text-xl uppercase align-middle transition-all select-none  active:opacity-50 disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none py-4 px-4 bg-gray-700"
+        className=" text-black font-bold text-xl uppercase align-middle transition-all select-none  active:opacity-50 disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none py-4 px-4 bg-gray-300 rounded-sm"
         onClick={() => (loading ? router.push("/checkout") : {})}
       >
         Go To Cart

@@ -46,7 +46,7 @@ function Checkout() {
   };
 
   return (
-    <div className="flex justify-center items-center p-8 overflow-auto">
+    <div className="flex justify-center items-center p-8 overflow-auto phone:p-4">
       <div className="w-[400px] p-4 bg-[#fff] text-black rounded-[4px] ">
         {/* upper header */}
         <div className="relative">
